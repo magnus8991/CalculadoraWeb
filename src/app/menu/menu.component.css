@@ -1,3 +1,7 @@
+mat-icon {
+    position: relative; top: 10%;
+}
+
 .navbar {
     background-color: #350000 !important;
 }

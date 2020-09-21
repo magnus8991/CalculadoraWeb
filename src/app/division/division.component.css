@@ -5,6 +5,10 @@
     background-size: 100%;
 }
 
+mat-icon {
+    vertical-align: -25%;
+}
+
 .container {
     padding-top: 5%; padding-bottom: 5%;
 }
@@ -27,8 +31,8 @@ small {
 }
 
 .logoDivision {
-    width: 70%; height: 98%;
-    margin-left: 15%;
+    width: 76%; height: 100%;
+    margin-left: 20%;
 }
 
 .btn-secondary {
