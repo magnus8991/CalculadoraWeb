@@ -1,0 +1,36 @@
+<div class="cuerpo">
+    <div class="container">
+    
+        <p class="tituloContainer"> RESTA DE DOS NUMEROS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form" id="frmSuma" style="padding-top: 5%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="minuendo" class="control-label">Minuendo:</label>
+                            <input type="number" class="form-control" name="minuendo" id="minuendo" [(ngModel)]="minuendo" placeholder="Digite el primer número">
+                            <small id="minuendoHelp" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="sustraendo" class="control-label">Sustraendo:</label>
+                            <input type="number" class="form-control" name="sustraendo" id="sustraendo" [(ngModel)]="sustraendo" placeholder="Digite el segundo número">
+                            <small id="sustraendoHelp" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="diferencia" class="control-label">Diferencia:</label>
+                            <input type="number" class="form-control" readonly id="diferencia" name="diferencia" [(ngModel)]="diferencia">
+                            <small id="diferenciaHelp" class="form-text text-muted">Visualice la resta de los numeros evaluados.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary btn-block" (click)="resta()"><mat-icon>calculate</mat-icon> Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="logoResta" src="../../assets/logoResta.ico" alt="RestaNumeros">
+            </div>
+        </div>
+    </div>
+</div>

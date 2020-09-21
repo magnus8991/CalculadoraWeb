@@ -1,0 +1,47 @@
+.cuerpo {
+    background-image: url("../../assets/logoAritmetica.jpg");
+    background-position: 100%;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.container {
+    padding-top: 5%; padding-bottom: 5%;
+}
+
+.tituloContainer {
+    color: #FFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 200%;
+    text-align: center;
+}
+
+.control-label {
+    color: #FFF;
+    font-size: 120%;
+}
+
+small {
+    color: #FFF !important;
+}
+
+.logoMultiplicacion {
+    width: 70%; height: 98%;
+    margin-left: 15%;
+}
+
+.btn-secondary {
+    background: #d60202;
+    height: 40%; font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+}
+
+.btn-secondary:hover {
+    background: #cc2929;
+}
+
+.btn-secondary:active {
+    background: #da6060 !important;
+}

@@ -1,0 +1,36 @@
+<div class="cuerpo">
+    <div class="container">
+
+        <p class="tituloContainer"> SUMA DE DOS NUMEROS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form" id="frmSuma" style="padding-top: 5%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="sumando1" class="control-label">Sumando 1:</label>
+                            <input type="number" class="form-control" name="sumando1" id="sumando1" [(ngModel)]="sumando1" placeholder="Digite el primer número">
+                            <small id="sumando1Help" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="sumando2" class="control-label">Sumando 2:</label>
+                            <input type="number" class="form-control" name="sumando2" id="sumando2" [(ngModel)]="sumando2" placeholder="Digite el segundo número">
+                            <small id="sumando2Help" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="resultado" class="control-label">Resultado:</label>
+                            <input type="number" class="form-control" readonly id="resultado" name="resultado" [(ngModel)]="resultado">
+                            <small id="resultadoHelp" class="form-text text-muted">Visualice la suma de los numeros evaluados.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary btn-block" (click)="suma()"><mat-icon>calculate</mat-icon> Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="logoSuma" src="../../assets/logoSuma.ico" alt="SumaNumeros">
+            </div>
+        </div>
+    </div>
+</div>

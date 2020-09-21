@@ -1,0 +1,36 @@
+<div class="cuerpo">
+    <div class="container">
+
+        <p class="tituloContainer"> MULTIPLICACION DE DOS NUMEROS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form" id="frmSuma" style="padding-top: 5%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="factor1" class="control-label">Factor 1:</label>
+                            <input type="number" class="form-control" name="factor1" id="factor1" [(ngModel)]="factor1" placeholder="Digite el primer número">
+                            <small id="factor1Help" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="factor2" class="control-label">Factor 2:</label>
+                            <input type="number" class="form-control" name="factor2" id="factor2" [(ngModel)]="factor2" placeholder="Digite el segundo número">
+                            <small id="factor2Help" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="producto" class="control-label">producto:</label>
+                            <input type="number" class="form-control" readonly id="producto" name="producto" [(ngModel)]="producto">
+                            <small id="productoHelp" class="form-text text-muted">Visualice el producto de los numeros evaluados.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary btn-block" (click)="multiplicacion()"><mat-icon>calculate</mat-icon> Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="logoMultiplicacion" src="../../assets/logoMultiplicacion.ico" alt="MultiplicacionNumeros">
+            </div>
+        </div>
+    </div>
+</div>

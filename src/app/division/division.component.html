@@ -1,0 +1,36 @@
+<div class="cuerpo">
+    <div class="container">
+
+        <p class="tituloContainer"> DIVISION DE DOS NUMEROS</p>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form" id="frmSuma" style="padding-top: 5%;">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="dividendo" class="control-label">Dividendo:</label>
+                            <input type="number" class="form-control" name="dividendo" id="dividendo" [(ngModel)]="dividendo" placeholder="Digite el primer número">
+                            <small id="dividendoHelp" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="divisor" class="control-label">Divisor:</label>
+                            <input type="number" class="form-control" name="divisor" id="divisor" [(ngModel)]="divisor" placeholder="Digite el segundo número">
+                            <small id="divisorHelp" class="form-text text-muted">Solo se pueden digitar números.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="cociente" class="control-label">Cociente:</label>
+                            <input type="number" class="form-control" readonly id="cociente" name="cociente" [(ngModel)]="cociente">
+                            <small id="cocienteHelp" class="form-text text-muted">Visualice el cociente de los numeros evaluados.</small>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary btn-block" (click)="division()"><mat-icon>calculate</mat-icon> Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="logoDivision" src="../../assets/logoDivision.ico" alt="DivisionNumeros">
+            </div>
+        </div>
+    </div>
+</div>
