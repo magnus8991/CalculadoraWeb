@@ -9,6 +9,7 @@ export class DivisionComponent implements OnInit {
   dividendo: number = 0;
   divisor: number = 0;
   cociente: number = 0;
+  ejemplo: number;
 
   constructor() { }
 
